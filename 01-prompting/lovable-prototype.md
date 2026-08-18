@@ -4,18 +4,18 @@
 
 ## Prototype link
 
-_The public Lovable share URL._
+_https://juno-ai-insight.lovable.app_
 
 _____
 
 ## What it demonstrates
 
-_The one flow this prototype proves._
+_It is creating and executing based on the prompt._
 
 _____
 
 ## Debrief
 
-- **What worked:** _____
-- **What broke / felt like a toy:** _____
-- **What I'd change next pass:** _____
+- **What worked:** Design and brand alignment worked, Structure - Followed the task, constraints
+- **What broke / felt like a toy:** Not actually performing the task efficiently. Task says you put and bring out right information with structured insights
+- **What I'd change next pass:** Guardrails aren't tuned enough for a successful PRD 
