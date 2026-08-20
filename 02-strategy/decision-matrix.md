@@ -15,26 +15,3 @@ We are deciding how to stop with bug and minor customer wants from monopolizing 
 ## Recommendation
 
 Build. Highest score because Control and Moat are the axes that matter for a ranking system that can separated feature requests from minor bug fixes. A generic Buy / API is cheaper and faster, but it cannot cite RocketShip sources, so it recreates the loudest-voice problem. Fine-tune is slower than we can wait and still needs the corpus Juno would retrieve live. Autonomy stays Copilot: Juno drafts the ranked backlog with citations; the PM approves before publish.
-# AI Solution Decision Matrix · Juno
-
-> Module 2 · Strategy. The build / buy / fine-tune / partner call, made with the **M2 · AI Solution Decision Matrix**. Paste the tool's markdown over this file.
-
-## The decision
-
-_What are you deciding, and why now?_
-
-_____
-
-## Options scored
-
-| Option | Cost | Speed | Control | Moat | Risk | Score |
-|---|---|---|---|---|---|---|
-| _Build_ | _…_ | _…_ | _…_ | _…_ | _…_ | _…_ |
-| _Buy / API_ | _…_ | _…_ | _…_ | _…_ | _…_ | _…_ |
-| _Fine-tune_ | _…_ | _…_ | _…_ | _…_ | _…_ | _…_ |
-
-## Recommendation
-
-_The chosen option and the business reason._
-
-_____
