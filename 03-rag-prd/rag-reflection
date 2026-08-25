@@ -1,0 +1,21 @@
+## Diagnostic Diff · Juno RAG Lab
+
+_Working notes from Module 3 Lab 1. Do not paste over `03-rag-prd/prd.md`. That file comes from the AI PRD Builder._
+
+**Lovable prototype:** https://juno-ai-insight.lovable.app
+
+### Before - Quality Mode (no strategy)
+
+P1 - CSV Export Feature Crashes
+P2 - Overly Bright Navigation Bar
+P3 - Dark Mode Request
+
+### After - Strategy Mode (with RocketShip Strategy One-Pager)
+
+P0 - CSV Export Crash
+P3 - Slow Export Speed
+
+### Takeaway
+
+> The strategy doc was essential; it helped filter out non-priority requests.
+
