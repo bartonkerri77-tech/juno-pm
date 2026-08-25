@@ -8,7 +8,7 @@ The Problem: Roadmaps are hard to maintain and stay updated. The issue results f
 
 Reduce roadmap research from 2 hours a week to 30 minutes. 
 Reduce roadmap documentation from 5 hours a week to 30 minutes. 
-Keep roadmap documentation updated.
+Keep roadmap documentation reliably re-published once a week or more. 
 
 ## 3. Autonomy Level
 
@@ -19,7 +19,7 @@ Letting Juno move sprint priorities or shift live dates without a human approval
 
 ## 4. Data & Model Approach
 
-Run through LLM for speed to market. 
+Run through LLM (Claude) for speed to market. 
 Ground RAG for searching the systems where info is stored: Slack, Jira, etc data systems for relevant text. 
 
 ## 5. Risks & Mitigations
