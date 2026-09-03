@@ -20,7 +20,7 @@ Weekly after PM locks prioritization for next sprint
 |---|---|---|---|
 | 1 | Read the submitted PRD for each prioritized enhancement or bug fix ticket | Claude.design(projectID): write | - Hands back when wireframe is ready  - Hands back when final deck is ready - Success: wireframe for each prioritized ticket submitted is created - Success: deck for all prioritized tickets in a sprint is created - Failure: > 2 tool errors in a run → log + abort. - Failure: Claude tokens are  - Escalation: confidence < 70% on any wireframe → hand to PM. - Timeout: 90s wall clock → abort with partial output. |
 | 2 | For each prioritized ticket, prompt Claude Design to create a wireframe of the solution using the Design System | GoogleSlides.duplicate (ExecTemplate): write |  |
-| 3 | Route wireframe to the project PM review based on confidence threshold. | Slack.write(#PM) | Success: Notification of completed task or message about error. Failure: 0 Notifications, 0 Error handline |
+| 3 | Route wireframe to the project PM review based on confidence threshold. | Slack.write(#PM) | Success: Notification of completed task or message about error. Failure: 0 Notifications, 0 Error handling |
 | 4 | Make a copy of Executive Stakeholder template | GoogleSlides.write(NewExecTemplate_My Drive) | Success: Slide deck is created. Failure: Slide is not Created|
 | 5 | Replace the standard information for the new period (i.e. New title, date, etc) | Success: Information is populated in place of placeholder syntax. Failure: Undefined is added |  Success: Information is populated in place of placeholder syntax. Failure: Undefined is added|
 | 6 | Organize each ticket into a slide that includes the draft summary card (transcript quote + strategic citation). | _ |  |
@@ -30,19 +30,20 @@ Weekly after PM locks prioritization for next sprint
 
 **Schemas**
 
-_(what each tool returns)_
+Prompt language as .txt shared with Claude Design
 
 **Memory (in or out of scope)**
 
 - **Episodic:** In-scope - tool results (Claude, Google Slides) and retrieved chunks. Lifetime: end of run.
 - **Semantic:** In-scope - template for executive presentation. 
 Out of scope - do not persist customer data or any previous session data
-- **Working:** In scope, current Design project for Claude. 
+- **Working:** In scope, current Design project for Claude. In scope, creating slides.
 - **External:** _(not set)_
 
 ## Human-in-the-loop
 
-After the presentation has been completed to design and build specifications
+After the design has been completed to include new feature.
+After the presentation has been completed to design and build specifications. 
 
 ## Success & failure
 
@@ -53,8 +54,8 @@ After the presentation has been completed to design and build specifications
 - Failure: > 2 tool errors in a run → log + abort.
 - Failure: Claude tokens limits are reached for the day.
 - Escalation: confidence < 70% on any wireframe → hand to PM.
-- Timeout: 90s wall clock → abort with partial output.
-- Fails safe when: Files are shared outside of MyDrive. Agent attempts to write to any non-approved 
+- Timeout: 120s wall clock → abort with partial output.
+- Fails safe when: Files are shared outside of MyDrive. Agent attempts to write to any non-approved Slack Channel. Agent attempts to use a non-approved tool. Agent attempts to download files. 
 
 ## Self-review
 
