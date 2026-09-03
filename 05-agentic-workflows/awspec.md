@@ -51,10 +51,10 @@ After the presentation has been completed to design and build specifications
 - Success: wireframe for each prioritized ticket submitted is created
 - Success: deck for all prioritized tickets in a sprint is created
 - Failure: > 2 tool errors in a run → log + abort.
-- Failure: Claude tokens are 
+- Failure: Claude tokens limits are reached for the day.
 - Escalation: confidence < 70% on any wireframe → hand to PM.
 - Timeout: 90s wall clock → abort with partial output.
-- **Fails safe when:** _(what the agent cannot touch, and what happens if a tool fails)_
+- Fails safe when: Files are shared outside of MyDrive. Agent attempts to write to any non-approved 
 
 ## Self-review
 
