@@ -20,8 +20,8 @@ Weekly after PM locks prioritization for next sprint
 |---|---|---|---|
 | 1 | Read the submitted PRD for each prioritized enhancement or bug fix ticket | Claude.design(projectID): write | - Hands back when wireframe is ready  - Hands back when final deck is ready - Success: wireframe for each prioritized ticket submitted is created - Success: deck for all prioritized tickets in a sprint is created - Failure: > 2 tool errors in a run → log + abort. - Failure: Claude tokens are  - Escalation: confidence < 70% on any wireframe → hand to PM. - Timeout: 90s wall clock → abort with partial output. |
 | 2 | For each prioritized ticket, prompt Claude Design to create a wireframe of the solution using the Design System | GoogleSlides.design(ExecTemplate): write |  |
-| 3 | Route wireframe to the project PM review based on confidence threshold. | _ |  |
-| 4 | Make a copy of Executive Stakeholder template | _ |  |
+| 3 | Route wireframe to the project PM review based on confidence threshold. | Slack.write(#PM) | Success: Notification of completed task or message about error. Failure: 0 Notifications, 0 Error handline |
+| 4 | Make a copy of Executive Stakeholder template | GoogleSlides.design(My Drive) | Success: Slide deck is created. Failure: Slide is not Created|
 | 5 | Replace the standard information for the new period (i.e. New title, date, etc) | _ |  |
 | 6 | Organize each ticket into a slide that includes the draft summary card (transcript quote + strategic citation). | _ |  |
 | 7 | Once wireframe is approved by PM, create 1-3 screenshots for each feature using the prototpies | _ |  |
