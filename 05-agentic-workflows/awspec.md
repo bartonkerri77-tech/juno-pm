@@ -22,7 +22,7 @@ Weekly after PM locks prioritization for next sprint
 | 2 | For each prioritized ticket, prompt Claude Design to create a wireframe of the solution using the Design System | GoogleSlides.duplicate (ExecTemplate): write | Success: New file is created. Failure: Error Message. |
 | 3 | Route wireframe to the project PM review based on confidence threshold. | Slack.write(#PM) | Success: Notification of completed task or message about error. Failure: 0 Notifications, 0 Error handling |
 | 4 | Make a copy of Executive Stakeholder template | GoogleSlides.write(NewExecTemplate_My Drive) | Success: Slide deck is created. Failure: Slide is not Created. Failure: Corrupted File|
-| 5 | Replace the standard information for the new period (i.e. New title, date, etc) | Success: Information is populated in place of placeholder syntax. Failure: Undefined is added |
+| 5 | Replace the standard information for the new period (i.e. New title, date, etc) |  GoogleSlides.write(NewExecTemplate_FileName_CoverPage) |Success: Information is populated in place of placeholder syntax. Failure: Undefined is added
 | 6 | Use information from a summary card to populate a single slide and repeat x of cards (transcript quote + strategic citation). | GoogleSlides.write(NewExecTemplate_ContentSlide) | Success: content is populated. Failure: No slides are created |
 | 7 | Once wireframe is approved by PM, create 1-3 screenshots for each feature using the prototypes | ClaudeDesign.write(ImageCreation) | Success: PNG for a feature is created. Failure: No PNG is created |
 | 8 | Add screenshots to the slide | GoogleSlide.write(NewExecTemplate_ContentSlide) | Success: PNG is added to the Slide. Failure: No PNG is added to the slide |
