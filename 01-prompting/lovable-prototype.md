@@ -10,7 +10,7 @@ _____
 
 ## What it demonstrates
 
-_It is creating and executing based on the prompt._
+It is creating and executing based on the prompt.
 
 _____
 
